@@ -5,7 +5,7 @@ window.initMap = function () {
   })
 
   const icon = {
-    url: ../images/icon.png, // url
+    url: '../images/icon.png', // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
