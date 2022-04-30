@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <style>
+    .title {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      text-align: center;
+      line-height: 2em;
+    }
+
+    .item {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 1.5em;
+      line-height: 2em;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+    }
+
+    .item>div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .left>img {
+      display: block;
+      width: 560px;
+      height: 320px;
+    }
+
+    .right {
+      flex-direction: column;
+      justify-content: start !important;
+      align-items: start;
+      padding-right: 80px;
+      text-align: left;
+    }
+
+    .desc {
+      font-style: italic;
+      font-size: 16px;
+    }
+
+    .detail {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 20px;
+    }
+
+    .detail>div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      width: 440px;
+      height: 630px;
+      font-size: 18px;
+      line-height: 2em;
+      box-shadow: 10px 10px 10px -5px #ccc;
+    }
+
+    .d-left {
+      background-color: #fefbe7;
+    }
+
+    .d-img {
+      width: 400px;
+      height: 300px;
+      margin: 10px 0;
+    }
+
+    .d-img>img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .d-item {
+      font-size: 16px;
+      color: rgba(0, 0, 0, .6);
+    }
+
+    .d-item:first-child {
+      font-size: 18px;
+      color: #000;
+    }
+
+    .bottom {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .bottom>.pie {
+      width: 300px;
+      height: 300px;
+    }
+
+    .pie>img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .talks {
+      width: 300px;
+      height: 200px;
+      background-color: #fefbe7;
+      line-height: 2em;
+      padding: 20px;
+      border-radius: 20px;
+      position: relative;
+    }
+
+    .talks::after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-top: 100px solid #fefbe7;
+      border-bottom: 10px solid transparent;
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+      transform: rotate(30deg);
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      width: 800px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+    }
+
+    .con,
+    .con1 {
+      padding: 20px 40px;
+      width: 800px;
+      line-height: 2em;
+      background-color: #bbc5b3;
+    }
+
+    .corner,
+    .corner1 {
+      width: 50px;
+      height: 104px;
+      position: relative;
+    }
+
+    .corner::after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: 0;
+      border-top: 52px solid transparent;
+      border-bottom: 52px solid transparent;
+      border-right: 50px solid #bbc5b3;
+    }
+
+    .con1 {
+      background-color: #9fbbc0;
+    }
+
+    .corner1::after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 0;
+      border-top: 52px solid transparent;
+      border-bottom: 52px solid transparent;
+      border-left: 50px solid #9fbbc0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="link">
+      <a href="index.html">Home: Resume</a>
+    </div>
+    <div class="link active">
+      <a href="qrcode.html">QR Code</a>
+    </div>
+    <div class="link">
+      <a href="adelaide.html">Adelaide</a>
+    </div>
+    <div class="link">
+      <a href="map.html">Google Map</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="title">QR Code</div>
+    <div class="item">
+      <div class="left">
+        <iframe width="560" height="320" src="https://www.youtube.com/embed/k09ip9Z6TCk" title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="background-color: #ccc;"></iframe>
+      </div>
+      <div class="right">
+        <div class="t">The Story of the QR Code - What is a QR code and how does it work?</div>
+        <div class="desc">Abstract: The rise of QR codes and how they've become so useful in our everyday lives.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="title">QR Code in China</div>
+    <div class="subtitle">QR Code now is been used so widely in China. Mainly 3 Ways to use it.</div>
+    <div class="subtitle">Use QR Code to Pay</div>
+    <div class="item">
+      <div class="left">
+        <img src="./images/qrcode_pay.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="t">
+          I belive that most of you heard about Alibaba or Tencent. This two Company is the first two company to lead
+          this trend.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="title">Here is some data about it.</div>
+    <div class="subtitle">China Official Daily: More than 90% payment in China is completed via QR Code.</div>
+    <div class="subtitle">Consulting Asso.:QR Code Payment in 2020Q4 is over RMB 1000 Billion</div>
+    <div class="subtitle">China Gov.: 10 Billion QR Code is used in China Every Single Day</div>
+    <div class="detail">
+      <div class="d-left">
+        <div class="d-title">Use QR Code as e-Ticket</div>
+        <div class="d-img">
+          <img src="./images/qrcode_eticket.jpg" alt="">
+        </div>
+        <div class="d-detail">
+          <div class="d-item">Some Comments</div>
+          <div class="d-item">1.Flight Passengers: "It is easier to carry and manage e-Ticket by QR Code".</div>
+          <div class="d-item">2.Football match Audience: "Fast and safe".</div>
+        </div>
+      </div>
+      <div class="d-left">
+        <div class="d-title">Use QR Code against Covid-19</div>
+        <div class="d-img">
+          <img src="./images/qrcode_health.jpeg" alt="">
+        </div>
+        <div class="d-detail">
+          <div class="d-item">How China Does</div>
+          <div class="d-item">1.People are asked to show QR Code to record their journey when in Pubilc.</div>
+          <div class="d-item">2.Close with the Postive will get a Red QR Code.</div>
+          <div class="d-item">3.Red QR code are suggested to stay at home for 14 days.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="pie">
+      <img src="./images/comment.png" alt="">
+    </div>
+    <div class="talks">
+      <div class="talk">1.When QR Code is all used, what can we use?</div>
+      <div class="talk">2.If QR code in Payment is guessed out, who can protect our money?</div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="corner"></div>
+    <div class="con"> Though there is a lot of concern about QR code,
+      i still believe that QR Code Benefits People a lot.
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="con1">The QR code has helped me and my family
+
+      be protected from COVID-19
+
+      in Shanghai this April.
+
+      It tells me to be positive and patient.
+
+      Mentally. Of course.</div>
+    <div class="corner1"></div>
+  </div>
+</body>
+
+</html>

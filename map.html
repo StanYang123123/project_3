@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Map</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <style>
+    #map {
+      width: 960px;
+      height: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="link">
+      <a href="index.html">Home: Resume</a>
+    </div>
+    <div class="link">
+      <a href="qrcode.html">QR Code</a>
+    </div>
+    <div class="link">
+      <a href="adelaide.html">Adelaide</a>
+    </div>
+    <div class="link active">
+      <a href="map.html">Google Map</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="map"></div>
+  </div>
+</body>
+
+
+<script src="./js/map.js"></script>
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL_Cwfw6_YX9eO9e4dgYAQy2r3XSD46yM&callback=initMap"></script>
+
+</html>

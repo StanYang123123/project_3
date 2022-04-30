@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home: Resume</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <style>
+    .me {
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    .name {
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+
+    .info {
+      border: 1px solid #000;
+      padding: 10px;
+      width: 260px;
+      margin: 0 auto;
+      margin-top: 50px;
+      transform: scale(1.3);
+      box-shadow: 10px 10px 10px -5px #ccc;
+    }
+
+    .btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
+
+    .btn {
+      padding: 5px 10px;
+      /* border: 1px solid #000; */
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #a0bcc2;
+      color: #fefbe7;
+      position: relative;
+    }
+
+    .btn>.value {
+      display: none;
+      position: absolute;
+      color: #000;
+      top: -40px;
+      left: 0;
+      background-color: #fefbe7;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .btn>.value::after {
+      content: '';
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid #fefbe7;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+    }
+
+    .phone:hover>.value {
+      display: block;
+    }
+
+    .email:hover>.value {
+      display: block;
+    }
+
+    .btn>a {
+      color: #fefbe7;
+    }
+
+    .edu,
+    .work {
+      width: 960px;
+      margin: 0 auto;
+      margin-top: 50px;
+      padding: 20px;
+      /* border: 1px solid #000; */
+      border-radius: 5px;
+      background-color: #dae5d0;
+      /* 右下阴影 */
+      box-shadow: 10px 10px 10px -5px #ccc;
+    }
+
+    .edu>.title,
+    .work>.title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: 600;
+    }
+
+    .e {
+      line-height: 2em;
+    }
+
+    .experience {
+      line-height: 2em;
+    }
+
+    .experience>h3 {
+      font-size: 1.5em;
+    }
+
+    .experience>h5 {
+      font-style: italic;
+    }
+
+    .experience>ol {
+      padding-left: 20px;
+      list-style: circle;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="link active">
+      <a href="index.html">Home: Resume</a>
+    </div>
+    <div class="link">
+      <a href="qrcode.html">QR Code</a>
+    </div>
+    <div class="link">
+      <a href="adelaide.html">Adelaide</a>
+    </div>
+    <div class="link">
+      <a href="map.html">Google Map</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="me">
+      <div class="name">Ruilin Yang（Stan）</div>
+      <div class="info">
+        <p>Contact me！</p>
+        <div class="btns">
+          <div class="btn phone">
+            Phone
+            <div class="value">+8613386115519</div>
+          </div>
+          <div class="btn email">
+            E-mail
+            <div class="value">StanYang123@yeah.net</div>
+          </div>
+          <div class="btn">
+            <a href="https://www.linkedin.com/in/%E7%91%9E%E9%9C%96-%E6%9D%A8-9126a9200/">Linkein</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu">
+      <div class="title">
+        Education
+      </div>
+      <div class="e">
+        2016-2019 UNISA (Adelaide, Aussie) <br>
+        Major in Information System Management
+      </div>
+    </div>
+
+    <div class="work">
+      <div class="title">
+        Work
+      </div>
+      <div class="experience">
+        <h3>Latest: Product Manager</h3>
+        <h5>Car infotainment and Car Manufacturing</h5>
+        <ol>
+          <li>Design information system for Clients to control Maunfacturing process.</li>
+          <li>Manage and combine all Content Provider into HMI.</li>
+          <li>Help Clients to make decision on display equipment design.</li>
+        </ol>
+
+        <h3>Previous: Headhunter</h3>
+        <h5>A headhunter for talents not real human head</h5>
+        <ol>
+          <li>Mapping Candidate in Target Company.</li>
+          <li>Attach and Collect Candidate info via Phone or E-mail.</li>
+          <li>Move Candidate to quit. Negotiate with HR on Candidates' salary</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
