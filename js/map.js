@@ -5,7 +5,8 @@ window.initMap = function () {
   })
 
   const icon = {
-    url: '../images/icon.png', // url
+//     url: '../images/icon.png', // url
+     url: 'https://stanyang123123.github.io/project_3/images/icon.png', // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
